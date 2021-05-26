@@ -1,0 +1,16 @@
+[{
+  "Name": "aspellWordListFinder",
+  "Description": "Aspell plugin companion to find Aspell personal word lists in the current or parent directories",
+  "Tags": ["spellchecking", "spelling", "aspell", "spellchecker"],
+  "Website": "https://github.com/stephengaito/microAspellWordListFinderPlugin",
+  "Versions": [
+    {
+      "Version": "1.0.0",
+      "Url": "https://github.com/stephengaito/microAspellWordListFinderPlugin/archive/v1.0.0.zip",
+      "Require": {
+        "micro": ">=2.0.7",
+        "aspell" : ">=1.2.1"
+      }
+    },
+  ]
+}]
