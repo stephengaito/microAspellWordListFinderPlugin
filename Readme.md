@@ -37,7 +37,7 @@ Add the following to your ~/.config/micro/bindings.json file:
     "F5": "lua:aspell.acceptsug",
     "F6": "lua:aspell.addpersonal",
     "Tab": "Autocomplete|lua:aspell.acceptsug|IndentSelection|InsertTab"
-``
+```
 
 ## Notes:
 
