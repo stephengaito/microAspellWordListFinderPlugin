@@ -61,13 +61,13 @@ function findAspellWordList(buf)
 
   local theUserHomeDir = userHomeDir()
   if err == nil and theUserHomeDir ~= "" then
-    local possiblePWL = filepath.Join(theUserHomeDir, ".config", "aspell", ".aspell.pws")
+    local possiblePWL = filepath.Join(theUserHomeDir, ".config", "aspell", "aspell.pws")
     local _, err = os.Stat(possiblePWL)
     if err == nil then
       updateAspellArgs(buf, possiblePWL)
       return
     end
-    local possiblePWL = filepath.Join(theUserHomeDir, ".config", ".aspell.pws")
+    local possiblePWL = filepath.Join(theUserHomeDir, ".aspell.pws")
     local _, err = os.Stat(possiblePWL)
     if err == nil then
       updateAspellArgs(buf, possiblePWL)

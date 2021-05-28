@@ -39,11 +39,25 @@ Add the following to your ~/.config/micro/bindings.json file:
     "Tab": "Autocomplete|lua:aspell.acceptsug|IndentSelection|InsertTab"
 ```
 
+## Installation
+
+**By hand**
+
+You can install AspellWordListFinder by hand by creating a 
+`0AspellWordListFinder` directory in your micro plugin directory 
+(typically `~/.config/micro/plug`) and then copying the 
+`aspellWordListFinder.lua` and `repo.json` files into the newly created 
+directory. 
+
 ## Notes:
 
-1. Since the Aspell plugin might run before the AspellWordListFinder, when 
-   you open up a buffer for the first time you *might* see words in your 
-   personal word list marked as "misspelled"... if this is the case, 
+1. Since the Aspell plugin *might* run before the AspellWordListFinder, 
+   when you open up a buffer for the first time you *might* see words in 
+   your personal word list marked as "misspelled"... if this is the case, 
    simply make a small change to the buffer and your personal word list 
    will be used from then on. 
-   
+
+   Another solution is to install the AspellWordListFinder into the plugin 
+   directory with a leading digit (such as `0`). This will ensure the word 
+   list finder is loaded *before* aspell itself and so the personal word 
+   list is found before aspell does an initial spelling check. 
