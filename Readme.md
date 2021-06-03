@@ -25,8 +25,7 @@ main dictionaries in your repository's "personal word list".
 Type the following commands:
 
 ```
-  echo "personal_ws-1.1 en 0" >  .aspell.pws
-  echo                        >> .aspell.pws
+  cp empty.aspell.pws <pathToYourProject>/.aspell.pwd
 ```
 
 ## Suggested key bindings
